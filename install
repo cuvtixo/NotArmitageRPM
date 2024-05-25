@@ -1,17 +1,17 @@
 ## Ruby/git
-cd
-sudo apt-get install git ruby nmap curl -y > /dev/null
-sudo apt install default-jdk postgresql -y > /dev/null
-sudo systemctl enable postgresql > /dev/null
-sudo systemctl start postgresql > /dev/null
+#cd
+#sudo dnf install git ruby nmap curl -y > /dev/null
+#sudo dnf install default-jdk postgresql -y > /dev/null
+#sudo systemctl enable postgresql > /dev/null
+#sudo systemctl start postgresql > /dev/null
 
 ## Fix possible FuckUps
-cd
-sudo apt-get remove metasploit-framework postgresql --purge -y > /dev/null
-sudo rm -r /opt/metasploit-framework > /dev/null
-sudo rm -r /opt/armitage > /dev/null
-sudo rm -r /usr/local/bin/armitage > /dev/null
-sudo rm -r /usr/local/bin/teamserver > /dev/null
+#cd
+#sudo apt-get remove metasploit-framework postgresql --purge -y > /dev/null
+#sudo rm -r /opt/metasploit-framework > /dev/null
+#sudo rm -r /opt/armitage > /dev/null
+#sudo rm -r /usr/local/bin/armitage > /dev/null
+#sudo rm -r /usr/local/bin/teamserver > /dev/null
 
 ## Metasploit
 cd /opt && curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
